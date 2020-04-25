@@ -13,7 +13,7 @@ jobs:
       - run: sudo apt-get install -y context  
       - uses: docker://pandoc/latex:2.9
         with:
-          args: "--standalone --template=styles/chmduquesne.tex --from markdown --to context --variable papersize=A4 --output=output/resume.pdf markdown/resume.md"
+          args: "--standalone --template=styles/chmduquesne.tex --from markdown --to latex --variable papersize=A4 --output=output/resume.pdf markdown/resume.md"
       - uses: actions/upload-artifact@master
         with:
           name: output
