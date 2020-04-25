@@ -10,7 +10,7 @@ jobs:
       - uses: actions/checkout@v1
       - run: mkdir output
       - run: echo "foo" > input.txt
-      - run: apt-get install -y context  
+      - run: sudo apt-get install -y context  
       - uses: docker://pandoc/latex:2.9
         with:
           args: "--standalone --template=styles/chmduquesne.tex --from markdown --to context --variable papersize=A4 --output=output/resume.pdf markdown/resume.md"
