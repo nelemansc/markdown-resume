@@ -1,0 +1,19 @@
+name: Document Conversion
+
+on: push
+
+jobs:
+  convert_via_pandoc:
+    name: Convert via Pandoc
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v1
+      - run: mkdir output
+      - run: echo "foo" > input.txt
+      - uses: docker://pandoc/latex:2.9
+        with:
+          args: "--standalone --template=styles/chmduquesne.tex --from markdown --to context --variable papersize=A4 --output=output/resume.pdf markdown/resume.md"
+      - uses: actions/upload-artifact@master
+        with:
+          name: output
+          path: output

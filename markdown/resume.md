@@ -49,7 +49,11 @@ Skills
 
 **Infrastructure as Code**: Terraform **/** Cloudformation
 
-**Cloud & Containers**: [AWS Certified Solutions Architect](https://www.certmetrics.com/amazon/public/badge.aspx?i=1&t=c&d=2017-10-25&ci=AWS00349475) **/** Google Cloud **/** Docker
+**Cloud & Containers**: AWS **/** Google Cloud **/** Docker
+
+**Certifications**: [AWS Certified Solutions Architect](https://www.certmetrics.com/amazon/public/badge.aspx?i=1&t=c&d=2017-10-25&ci=AWS00349475) **/** Cisco CCNA
+
+**Languages**: Python **/** Bash **/** Ruby **/** SQL **/** HCL
 
 Open Source
 :   List open source contributions here, perhaps placing emphasis on
