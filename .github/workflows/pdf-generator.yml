@@ -11,6 +11,7 @@ jobs:
       - run: mkdir output
       - run: echo "foo" > input.txt
       - uses: docker://pandoc/latex:2.9
+      - run: apt-get install -y context  
         with:
           args: "--standalone --template=styles/chmduquesne.tex --from markdown --to context --variable papersize=A4 --output=output/resume.pdf markdown/resume.md"
       - uses: actions/upload-artifact@master
