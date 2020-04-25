@@ -4,15 +4,14 @@ on: push
 
 jobs:
   convert_via_pandoc:
-    name: Convert via Pandoc
+    name: Convert resume from markdown to pdf via Pandoc
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v1
       - run: mkdir output
-      - run: echo "foo" > input.txt
       - run: sudo apt-get install -y context pandoc
       - run: pandoc --standalone --template=styles/chmduquesne.tex --from markdown --to context --variable papersize=A4 --output=output/resume.pdf markdown/resume.md
-      - name: Sync static assets to S3
+      - name: Sync resume to S3
         uses: jakejarvis/s3-sync-action@master
         with:
           args: --acl public-read --follow-symlinks
