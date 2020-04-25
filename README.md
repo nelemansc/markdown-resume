@@ -46,31 +46,3 @@ sudo pacman -S pandoc texlive-core
 brew install pandoc
 brew cask install mactex
 ```
-
-### Troubleshooting
-
-#### Get versions
-
-Check if the dependencies are up to date.
-
-```
-context --version
-pandoc --version
-```
-
-#### Cannot process lua
-Currently pandoc 1.x may be within your distro's repos and the latest version should be used. See the
-[pandoc releases](https://github.com/jgm/pandoc/releases) for your distro.
-
-e.g. for Debian / Ubuntu
-```
-wget https://github.com/jgm/pandoc/releases/download/2.2.1/pandoc-2.2.1-1-amd64.deb
-sudo dpkg -i pandoc-2.2.1-1-amd64.deb
-```
-
-#### Context executable cannot be found
-Some users have reported problems where their system does not properly find the ConTeXt
-executable, leading to errors like `Cannot find context.lua` or similar. It has been found
-that running `mtxrun --generate`, ([suggested on texlive-2011-context-problem](
-https://tex.stackexchange.com/questions/53892/texlive-2011-context-problem)), can fix the
-issue.
