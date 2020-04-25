@@ -11,7 +11,7 @@ jobs:
       - run: mkdir output
       - run: echo "foo" > input.txt
       - run: sudo apt-get install -y context pandoc
-      - run: pandoc --standalone --template=styles/chmduquesne.tex --from markdown --to latex --variable papersize=A4 --output=output/resume.pdf markdown/resume.md
+      - run: pandoc --standalone --template=styles/chmduquesne.tex --from markdown --to context --variable papersize=A4 --output=output/resume.pdf markdown/resume.md
       - uses: actions/upload-artifact@master
         with:
           name: output
