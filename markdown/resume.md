@@ -23,18 +23,18 @@ Experience
 
 _2016 - Present_
 
-Short text containing the type of work done, results obtained,
-lessons learned and other remarks. Can also include lists and
-links:
+Planned/executed datacenter migrations and cloud migrations that required significant adaptation for a monolithicly architected CMS. Rearchitected a hosting environment for a $500+ million dollar company to meet their significant traffic demands and security constraints.
 
 * First item
 
 * Item with [link](http://www.example.com). Links will work both in
   the html and pdf versions.
 
-**That Other Job You Had**
+**Regis Corporation - Systems Administrator**
 
-Also with a short description.
+_2011 - 2016_
+
+Some more things I did at Regis......
 
 Skills
 --------------------
@@ -55,13 +55,6 @@ Skills
 
 **Languages**: Python **/** Bash **/** Ruby **/** SQL **/** HCL
 
-Open Source
-:   List open source contributions here, perhaps placing emphasis on
-    the project names, for example the **Linux Kernel**, where you
-    implemented multithreading over a long weekend, or **node.js**
-    (with [link](http://nodejs.org)) which was actually totally
-    your idea...
-
 Languages
 :   **AWS:** Here, we have an itemization, where we only want
     to add descriptions to the first few items, but still want to
@@ -76,25 +69,17 @@ Languages
     reference elsewhere in the document to reduce clutter (see source
     file). 
 
-:   **obscure-but-impressive-lang:** We both know this one's pushing
-    it.
-
-:   Basic knowledge of **C**, **x86 assembly**, **forth**, **Common Lisp**
+:   This resume is written in markdown and converted to a pdf via a GitHub Action. 
+    Feel free to check it out here: [https://github.com/nelemansc/markdown-resume](https://github.com/nelemansc/markdown-resume)
 
 [ref]: https://github.com/githubuser/superlongprojectname
 
-Extra Section, Call it Whatever You Want
+Additional Tidbits
 ----------------------------------------
 
 * Human Languages:
 
      * English (native speaker)
-     * ???
-     * This is what a nested list looks like.
-
-* Random tidbit
-
-* Other sort of impressive-sounding thing you did
 
 ----
 
