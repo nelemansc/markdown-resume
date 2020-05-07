@@ -23,7 +23,9 @@ Experience
 
 _2016 - Present_
 
-Planned/executed datacenter migrations and cloud migrations that required significant adaptation for a monolithicly architected CMS. Rearchitected a hosting environment for a $500+ million dollar company to meet their significant traffic demands and security constraints.
+* Planned/executed datacenter migrations and cloud migrations that required significant adaptation for a monolithicly architected bespoke CMS 
+
+* Rearchitected a hosting environment for a $500+ million dollar company to meet their significant traffic demands and security constraints
 
 **Regis Corporation - Systems Administrator**
 
