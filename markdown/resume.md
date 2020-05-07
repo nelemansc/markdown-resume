@@ -33,7 +33,7 @@ _2016 - Present_
 
 _2011 - 2016_
 
-* Scheduled, organized & executed software rollouts across 6700 location in United States and Canada
+* Scheduled, organized & executed software rollouts across 6700 locations in the United States and Canada
 
 * Implemented a configuration management system for the POS systems to eliminate configuration drift
 
