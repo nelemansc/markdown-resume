@@ -4,7 +4,7 @@ Cassidy Nelemans
 ----
 
 >  Operations Engineer with 4+ years of supporting, automating, and optimizing deployments in AWS/on-prem.
->  Proficient in large scale cloud migrations and a supporter of DevOps principles.
+>  Proficient in large scale cloud migrations, able to adapt rapidly to change, and a supporter of DevOps principles.
 
 ----
 
@@ -12,9 +12,11 @@ Education
 ---------
 
 2006 - 2010
-:   **Bachelors of Business Administration**; University of Wisconsin - Stout
+:   **Bachelor of Science - Business Administration**; University of Wisconsin - Stout
 
     *Minor: Information Technology*
+
+    *Concentrations: Marketing and eCommerce*
 
 Experience
 ----------
@@ -31,7 +33,9 @@ _2016 - Present_
 
 _2011 - 2016_
 
-Some more things I did at Regis......
+* Scheduled, organized & executed software rollouts across 6700 location in United States and Canada
+
+* Implemented a configuration management system for the POS systems to eliminate configuration drift
 
 Skills
 --------------------
@@ -50,7 +54,7 @@ Skills
 
 **Certifications**: [AWS Certified Solutions Architect](https://www.certmetrics.com/amazon/public/badge.aspx?i=1&t=c&d=2017-10-25&ci=AWS00349475) **/** Cisco CCNA
 
-**Languages**: Python **/** Bash **/** Ruby **/** SQL **/** HCL
+**Languages**: Python **/** Bash **/** Ruby **/** PHP **/** SQL **/** HCL
 
 --------------
 > <nelemansc@gmail.com> • +1 (507) 461-2245
