@@ -1,8 +1,6 @@
 Markdown Resume
 ===================
-
-I wanted a better way to handle updating my resume without all the monotonous tasks of exporting
-all the different formats (mainly just pdf). Resume written in Markdown and formatted using ConTeXt.
+Resume written in Markdown and formatted using ConTeXt.
 Github Action converts the document to a pdf and uploads to S3
 
 ### Requirements
