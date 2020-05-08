@@ -16,8 +16,6 @@ Education
 
     *Minor: Information Technology*
 
-    *Concentrations: Marketing and eCommerce*
-
 Experience
 ----------
 
@@ -41,12 +39,19 @@ Skills
 --------------------
 
 **Source Control**: Git **/** SVN
+
 **Build Management**: Packer **/** Bitbucket Pipelines **/** Github Actions **/** Gitlab CI/CD Pipelines
+
 **Configuration Management**: Puppet **/** Ansible
+
 **Monitoring and Logging**: Nagios **/** Cloudwatch
+
 **Infrastructure as Code**: Terraform **/** Cloudformation
+
 **Cloud & Containers**: AWS **/** Google Cloud **/** Docker
+
 **Certifications**: [AWS Certified Solutions Architect](https://www.certmetrics.com/amazon/public/badge.aspx?i=1&t=c&d=2017-10-25&ci=AWS00349475) **/** Cisco CCNA
+
 **Languages**: Python **/** Bash **/** Ruby **/** PHP **/** SQL **/** HCL
 
 --------------
