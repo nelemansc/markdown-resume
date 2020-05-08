@@ -3,9 +3,10 @@ Cassidy Nelemans
 
 ----
 
->  Operations Engineer with 4+ years of supporting, automating, and optimizing deployments in AWS/on-prem.
+>  Operations Engineer with 4+ years of experience architecting and supporting highly available and scalable infrastructure.
 >  Proficient in large scale cloud migrations, able to adapt rapidly to change, and a supporter of DevOps principles.
 
+Experience architecting and supporting highly available and highly scalable infrastructure
 ----
 
 Education
