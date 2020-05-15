@@ -27,6 +27,8 @@ _2016 - Present_
 
 * Rearchitected a hosting environment for a $500+ million dollar company to meet their significant traffic demands and security constraints
 
+* Developed a microservice architecture for a health insurance company that uses multiple AWS services & adheres to HIPAA compliance
+
 **Regis Corporation - Systems Administrator**
 
 _2011 - 2016_
