@@ -40,17 +40,17 @@ _2011 - 2016_
 Skills
 --------------------
 
-**Source Control**: Git **/** SVN
+**Version Control**: Git **/** SVN
 
 **Build Management**: Packer **/** Bitbucket Pipelines **/** Github Actions **/** Gitlab CI/CD Pipelines
 
 **Configuration Management**: Puppet **/** Ansible
 
-**Monitoring and Logging**: Nagios **/** Cloudwatch
+**Monitoring and Logging**: Nagios **/** Cloudwatch **/** New Relic
 
 **Infrastructure as Code**: Terraform **/** Cloudformation
 
-**Cloud & Containers**: AWS **/** Google Cloud **/** Docker
+**Cloud & Containers**: AWS **/** GCP **/** Azure **/** Docker
 
 **Certifications**: [AWS Certified Solutions Architect](https://www.certmetrics.com/amazon/public/badge.aspx?i=1&t=c&d=2017-10-25&ci=AWS00349475) **/** Cisco CCNA
 
