@@ -25,7 +25,7 @@ _2016 - Present_
 
 * Planned/executed datacenter migrations and cloud migrations that required significant adaptation for a monolithicly architected bespoke CMS 
 
-* Rearchitected a hosting environment for a $500+ million dollar company to meet their significant traffic demands and security constraints
+* Rearchitected a hosting environment for a $500+ million dollar company to meet their high traffic demands and security constraints
 
 * Developed a microservice architecture for a health insurance company that uses multiple AWS services & adheres to HIPAA compliance
 
