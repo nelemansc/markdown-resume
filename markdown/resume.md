@@ -52,7 +52,7 @@ Skills
 
 **Cloud & Containers**: AWS **/** GCP **/** Azure **/** Docker
 
-**Certifications**: [AWS Certified Solutions Architect](https://www.youracclaim.com/badges/22598b0f-7de0-4285-a433-81174fb1737a) **/** Cisco CCNA
+**Certifications**: [AWS Solutions Architect](https://www.youracclaim.com/badges/22598b0f-7de0-4285-a433-81174fb1737a) **/** Cisco CCNA
 
 **Languages**: Python **/** Bash **/** Ruby **/** PHP **/** SQL **/** HCL
 
