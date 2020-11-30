@@ -23,19 +23,21 @@ Experience
 
 _2016 - Present_
 
-* Planned/executed datacenter migrations and cloud migrations that required significant adaptation for a monolithicly architected bespoke CMS 
+* Planned/executed datacenter and cloud migrations that required significant adaptation for a monolithicly architected bespoke CMS 
 
 * Rearchitected a hosting environment for a $500+ million dollar company to meet their high traffic demands and security constraints
 
 * Developed a microservice architecture for a health insurance company that uses multiple AWS services & adheres to HIPAA compliance
 
+* Manage and lead the operations team on infrastructure delivery
+
 **Regis Corporation - Systems Administrator**
 
 _2011 - 2016_
 
-* Scheduled, organized & executed software rollouts across 6700 locations in the United States and Canada
+* Scheduled, organized & executed software rollouts across 6700 locations in the U.S. and Canada
 
-* Implemented a configuration management system for the POS systems to eliminate configuration drift
+* Implemented a configuration management system to minimize configuration drift
 
 Skills
 --------------------
