@@ -9,6 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - run: mkdir output
+      - run: sudo apt-get update -y
       - run: sudo apt-get install -y context pandoc
       - run: pandoc --standalone --template=styles/chmduquesne.tex --from markdown --to context --variable papersize=A4 --output=output/resume.pdf markdown/resume.md
       - name: Sync resume to S3
