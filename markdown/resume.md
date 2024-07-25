@@ -3,8 +3,8 @@ Cassidy Nelemans
 
 ----
 
->  Operations Engineer experienced in architecting and supporting highly available and scalable infrastructure.
->  Proficient in large scale cloud migrations, able to adapt rapidly to change, and a supporter of DevOps principles.
+>  Senior Operations Engineer | Software Engineer with extensive experience in architecting and supporting highly available and scalable infrastructure.
+>  Proficient in large-scale cloud migrations, development workflow improvements, and increasing automation through CI/CD practices. Adapt rapidly to change and a strong advocate for DevOps principles.
 
 ----
 
@@ -19,9 +19,27 @@ Education
 Experience
 ----------
 
+**Clockwork - Senior Operations Engineer | Software Engineer**
+
+_2024 - Present_
+
+**Clockwork - Senior Operations Engineer**
+
+_2021 - 2024_
+
+* Reduced AWS spend by 70% while simultaneously reducing technical debt
+
+* Developed a private, secure LLM trained on client data, improving team efficiency and onboarding
+
+* Implemented a new VPN solution to enhance security
+
+* Organized AWS infrastructure and client infrastructure into a unified organization and implemented Google Workspaces SSO for all AWS accounts
+
+* Conducted performance tuning and optimization for high-traffic applications
+
 **Clockwork - Operations Engineer**
 
-_2016 - Present_
+_2016 - 2021_
 
 * Planned/executed datacenter and cloud migrations that required significant adaptation for a monolithicly architected bespoke CMS 
 
