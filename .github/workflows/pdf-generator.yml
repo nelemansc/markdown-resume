@@ -37,7 +37,7 @@ jobs:
           DEST_DIR: 'assets'
 
       - name: Invalidate CloudFront Distribution
-        uses: awact/cloudfront-invalidate@v1.3.1
+        uses: muratiger/invalidate-cloudfront-and-wait-for-completion-action@master
         with:
           distribution-id: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
           paths: '/*'
