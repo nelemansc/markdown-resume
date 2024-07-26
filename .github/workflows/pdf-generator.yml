@@ -7,10 +7,10 @@ jobs:
     name: Convert resume from markdown to pdf via Pandoc
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
       - run: mkdir output
       - run: sudo apt-get update -y
-      - run: sudo apt-get install -y context pandoc texlive texlive-xetex
+      - run: sudo apt-get install -y context pandoc texlive-luatex texlive-context
       - run: pandoc --version
       - run: context --version
       - run: pandoc --verbose --standalone --template=styles/chmduquesne.tex --from markdown --to context --variable papersize=A4 --output=output/resume.pdf markdown/resume.md
