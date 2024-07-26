@@ -10,7 +10,10 @@ jobs:
       - uses: actions/checkout@v2
       - run: mkdir output
       - run: sudo apt-get update -y
-      - run: sudo apt-get install -y context pandoc texlive-luatex texlive-context
+      - run: sudo apt-get install -y context pandoc texlive-luatex texlive-context luarocks
+      - run: sudo luarocks install luasocket
+      - run: export LUA_PATH="/usr/local/share/lua/5.3/?.lua;/usr/local/share/lua/5.3/?/init.lua;;"
+      - run: export LUA_CPATH="/usr/local/lib/lua/5.3/?.so;;"
       - run: pandoc --version
       - run: context --version
       - run: pandoc --verbose --standalone --template=styles/chmduquesne.tex --from markdown --to context --variable papersize=A4 --output=output/resume.pdf markdown/resume.md
