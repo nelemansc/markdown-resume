@@ -4,35 +4,44 @@ on: push
 
 jobs:
   convert_via_pandoc:
-    name: Convert resume from markdown to pdf via Pandoc
+    name: Convert resume from markdown to pdf via Pandoc and ConTeXt
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v2
       - run: mkdir output
-      - run: sudo apt-get update -y
-      - run: sudo apt-get install -y context pandoc texlive-luatex texlive-context luarocks
-      - run: sudo luarocks install luasocket
-      - run: export LUA_PATH="/usr/local/share/lua/5.3/?.lua;/usr/local/share/lua/5.3/?/init.lua;;"
-      - run: export LUA_CPATH="/usr/local/lib/lua/5.3/?.so;;"
-      - run: pandoc --version
-      - run: context --version
-      - run: pandoc --verbose --standalone --template=styles/chmduquesne.tex --from markdown --to context --variable papersize=A4 --output=output/resume.pdf markdown/resume.md
-      - name: Sync resume to S3
+
+      - name: Install Dependencies
+        run: |
+          sudo apt-get update -y
+          sudo apt-get install -y context pandoc texlive-luatex texlive-context
+
+      - name: Convert Markdown to ConTeXt
+        run: |
+          pandoc --verbose --standalone --template=styles/chmduquesne.tex --from markdown --to context --variable papersize=A4 --output=output/resume.tex markdown/resume.md
+
+      - name: Compile PDF with ConTeXt
+        run: |
+          context output/resume.tex --result=resume.pdf
+
+      - name: Upload PDF to S3
         uses: jakejarvis/s3-sync-action@master
         with:
           args: --acl public-read --follow-symlinks
         env:
-         AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
-         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-         AWS_REGION: ${{ secrets.AWS_REGION }}
-         SOURCE_DIR: 'output'
-         DEST_DIR: 'assets'
-      - name: Invalidate Cloudfront distribution
-        uses: muratiger/invalidate-cloudfront-and-wait-for-completion-action@master
+          AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_REGION: ${{ secrets.AWS_REGION }}
+          SOURCE_DIR: 'output'
+          DEST_DIR: 'assets'
+
+      - name: Invalidate CloudFront Distribution
+        uses: awact/cloudfront-invalidate@v1.3.1
+        with:
+          distribution-id: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
+          paths: '/*'
         env:
-         DISTRIBUTION_ID: ${{ secrets.DISTRIBUTION_ID }}
-         PATHS: '/assets/*'
-         AWS_REGION: ${{ secrets.AWS_REGION }}
-         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_REGION: ${{ secrets.AWS_REGION }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
