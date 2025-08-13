@@ -74,7 +74,13 @@ Skills
 
 **Certifications**: [AWS Solutions Architect](https://www.youracclaim.com/badges/22598b0f-7de0-4285-a433-81174fb1737a) **/** [AWS SysOps Administrator](https://www.youracclaim.com/badges/9fc5633f-7b50-4c52-a438-bad94fe517cb)
 
-**Languages**: Python **/** Bash **/** Ruby **/** PHP **/** SQL **/** HCL
+**Languages**: Python **/** Bash **/** Ruby **/** PHP **/** SQL **/** HCL **/** JavaScript **/** Dart **/** Swift
+
+**Frontend Development**: React **/** Next.js **/** Vite
+
+**Mobile Development**: Flutter (iOS/Android)
+
+**AI/ML Integration**: LLM API Integration **/** Local LLM Deployment **/** Prompt Engineering
 
 --------------
 > <nelemansc@gmail.com> • +1 (507) 461-2245

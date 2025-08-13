@@ -52,4 +52,9 @@ jobs:
 
       - name: Invalidate CloudFront Distribution
         run: |
-          aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} --paths "/*"
+          if [ -z "${{ secrets.DISTRIBUTION_ID }}" ]; then
+            echo "Error: DISTRIBUTION_ID secret is not set or empty"
+            exit 1
+          fi
+          echo "Creating CloudFront invalidation for distribution: ${{ secrets.DISTRIBUTION_ID }}"
+          aws cloudfront create-invalidation --distribution-id "${{ secrets.DISTRIBUTION_ID }}" --paths "/*"
